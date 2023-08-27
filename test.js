@@ -9,3 +9,6 @@ const d = (a + b);
 }
 
 console.log(d);
+
+
+console.log("test");
