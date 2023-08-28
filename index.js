@@ -13,4 +13,8 @@ server.listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 
+tab = ["test", "list"]
 
+for (let i =0; i < tab.lenght; i++){
+  console.log(tab[i]);
+}
