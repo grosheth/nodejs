@@ -18,7 +18,7 @@ console.log("test");
 
 
 
-//Loop
+// Loop
 
 tab = ["test", "list"]
 
@@ -29,3 +29,32 @@ for (let i =0; i < tab.lenght; i++){
 for (const item of tab){
     console.log(item);
   }
+
+
+
+// Functions
+
+
+function sum(a, b){
+  return a + b;
+}
+
+const sum_anonymous = function(a, b){
+  return a + b;
+}
+
+
+const sum_anonymous_new_syntax = (a, b) => {
+  return a + b;
+}
+
+const sum_anonymous_new_syntax_simplified = (a, b) => a + b;
+
+var res = sum(2 , 5);
+console.log(res)
+var res = sum_anonymous(2 , 5);
+console.log(res)
+var res = sum_anonymous_new_syntax(2 , 5);
+console.log(res)
+var res = sum_anonymous_new_syntax_simplified(2 , 5);
+console.log(res)
