@@ -1,4 +1,5 @@
 // Variables
+console.log("--- Vars ---")
 const a = 1;
 const b = 2;
 const c = 3;
@@ -19,6 +20,7 @@ console.log("test");
 
 
 // Loop
+console.log("--- Loops---")
 
 tab = ["test", "list"]
 
@@ -34,6 +36,7 @@ for (const item of tab){
 
 // Functions
 
+console.log("--- Functions ---")
 
 function sum(a, b){
   return a + b;
@@ -58,3 +61,25 @@ var res = sum_anonymous_new_syntax(2 , 5);
 console.log(res)
 var res = sum_anonymous_new_syntax_simplified(2 , 5);
 console.log(res)
+
+
+
+// Default parameter
+
+console.log("--- Default params ---")
+
+const sayHello = (formule, name) => {
+  console.log(`${formule} ${name}`)
+}
+
+sayHello(); //Return undefined for both vars
+
+sayHello("Hi", "Alex");
+
+const sayHelloDef = (formule = "Hello", name = "Bob") => {
+  console.log(`${formule} ${name}`)
+}
+
+sayHelloDef(); // Returns default values
+
+sayHelloDef("Hi");
