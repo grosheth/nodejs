@@ -87,6 +87,8 @@ sayHelloDef("Hi");
 
 // JSON
 
+console.log("--- JSON---")
+
 const pc = {
   ram: 16,
   stockage: 512,
