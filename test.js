@@ -111,3 +111,6 @@ console.log(pc);
 
 pc.upgrade();
 console.log(JSON.stringify(pc));
+const strJSON = JSON.stringify(pc)
+
+console.log(JSON.parse(strJSON));
