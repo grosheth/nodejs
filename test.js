@@ -89,13 +89,25 @@ sayHelloDef("Hi");
 
 const pc = {
   ram: 16,
-  stockage: 412,
+  stockage: 512,
   processeur: "Intel Core i7",
   annee:2020,
-  logiciels: ["VSCode", "Firefox", "NodeJS", "Termnial"]
-}
+  logiciels: ["VSCode", "Firefox", "NodeJS", "Termnial"],
+
+  upgrade: function() {
+    this.ram *= 2;
+    this.stockage *= 2;
+  },
+};
 
 console.log(pc);
 console.log(pc.stockage);
 console.log(pc.logiciels);
-console.log(logiciels[0]);
+console.log(pc.logiciels[0]);
+
+// Can upgrade multiple time
+pc.upgrade();
+console.log(pc);
+
+pc.upgrade();
+console.log(JSON.stringify(pc));
