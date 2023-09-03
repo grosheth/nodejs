@@ -83,3 +83,19 @@ const sayHelloDef = (formule = "Hello", name = "Bob") => {
 sayHelloDef(); // Returns default values
 
 sayHelloDef("Hi");
+
+
+// JSON
+
+const pc = {
+  ram: 16,
+  stockage: 412,
+  processeur: "Intel Core i7",
+  annee:2020,
+  logiciels: ["VSCode", "Firefox", "NodeJS", "Termnial"]
+}
+
+console.log(pc);
+console.log(pc.stockage);
+console.log(pc.logiciels);
+console.log(logiciels[0]);
