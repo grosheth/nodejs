@@ -116,3 +116,83 @@ console.log(JSON.stringify(pc));
 const strJSON = JSON.stringify(pc)
 
 console.log(JSON.parse(strJSON));
+
+
+
+// Classes
+
+console.log("--- Classes ---")
+
+class Voiture {
+  constructor(marque, annee, kilometrage){
+    this.marque = marque;
+    this.annee = annee;
+    this.kilometrage = kilometrage;
+  }
+
+  afficherInfos() {
+    console.log("=== INFOS ===")
+    console.log(`> Marque: ${this.marque}`);
+    console.log(`> Annee: ${this.annee}`);
+    console.log(`> kilometrage: ${this.kilometrage}`);
+  }
+}
+
+const v = new Voiture("Volks");
+const f = new Voiture("Mitsubishi", 1990, 35000);
+console.log(v);
+console.log(f);
+
+f.afficherInfos();
+f.marque = "Toyota";
+f.annee = 2010;
+f.kilometrage = 463783;
+f.afficherInfos();
+
+
+
+// Async Functions
+
+console.log("--- Async Functions ---");
+
+// wait certain time before executing, this does not stop code from executing sequentially, it just delays.
+setTimeout(f.afficherInfos, 2000);
+
+setTimeout(() => {
+  console.log("hello")
+}, 2000);
+
+
+function wait2sec () {
+  return new Promise((resolve, reject) => {
+  
+    setTimeout(() => {
+      console.log("Timer Done");
+      resolve("its good");
+    }, 2000);
+
+    // Returns an error
+    // reject("Its bad");
+
+  });
+}
+
+
+// // Resolves leads to .then, Reject leads to .catch
+// wait2sec()
+//   .then(() => {
+//     console.log("Done");
+//   })
+//   .catch(() => {
+//     console.log("test");
+//   });
+
+
+async function main() {
+  console.log("Timer launch");
+  const results = await wait2sec();
+  console.log(results)
+  console.log("end");
+}
+
+main()
