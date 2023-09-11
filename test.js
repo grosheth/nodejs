@@ -150,7 +150,6 @@ f.kilometrage = 463783;
 f.afficherInfos();
 
 
-
 // Async Functions
 
 console.log("--- Async Functions ---");
