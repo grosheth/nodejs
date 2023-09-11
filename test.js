@@ -149,6 +149,7 @@ f.annee = 2010;
 f.kilometrage = 463783;
 f.afficherInfos();
 
+// Test comment
 
 // Async Functions
 
